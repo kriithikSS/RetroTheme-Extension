@@ -1,0 +1,21 @@
+{
+  "manifest_version": 3,
+  "name": "Retro 90s Theme",
+  "version": "1.0",
+  "description": "Transform websites into retro 90s themes, with domain-specific styles.",
+  "permissions": ["activeTab", "scripting"],
+  "host_permissions": ["<all_urls>"],
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"],
+      "css": []
+    }
+  ],
+  "web_accessible_resources": [
+    {
+      "resources": ["youtube.css", "default.css"],
+      "matches": ["<all_urls>"]
+    }
+  ]
+}

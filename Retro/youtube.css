@@ -1,0 +1,140 @@
+/* General Body Styling */
+body {
+  font-family: "Comic Sans MS", cursive;
+  background-color: #e0e0e0; /* Light Gray background */
+  color: #000 !important; /* Black text for the entire page */
+  font-size: 16px;
+}
+
+/* Header Styling */
+#masthead-container {
+  background-color: #000000; /* Dark Gray */
+  border-bottom: 2px solid #ff0; /* Bright Yellow border */
+}
+
+/* Search Box Styling (including your requested #container.ytd-searchbox styles) */
+#container.ytd-searchbox {
+  position: relative;
+  align-items: center;
+  background-color: #000000; /* Light Gray background for the search box */
+  border: 1px solid #ff4500; /* OrangeRed border */
+  border-right: none;
+  border-radius: 40px 0 0 40px;
+  box-shadow: inset 0 1px 2px #ff4500; /* Light Orange shadow */
+  caret-color: #000; /* Black caret color */
+  color: #000 !important; /* Black text for the input field */
+  padding: 0 4px 0 16px;
+  margin-left: 32px;
+  flex: 1;
+  display: flex;
+  flex-direction: row;
+}
+
+/* Sidebar Navigation */
+#guide-renderer {
+  background-color: #e0e0e0; /* Light Gray */
+  color: #000 !important; /* Black text */
+  border-right: 2px solid #ff0; /* Bright Yellow border */
+}
+
+#guide-renderer * {
+  color: #000 !important; /* Force black text on all child elements of #guide-renderer */
+}
+
+#sections ytd-guide-section-renderer {
+  border-bottom: 2px dashed #ff4500; /* OrangeRed dashed separator */
+}
+
+/* Video Thumbnails */
+ytd-thumbnail {
+  background-color: #e0e0e0; /* Light Gray */
+  border: 2px solid #ff0; /* Bright Yellow border */
+  padding: 5px;
+  color: #000 !important; /* Black text */
+}
+
+ytd-thumbnail:hover {
+  background-color: #444; /* Slightly lighter gray on hover */
+  border: 2px solid #0f0; /* Bright Green border on hover */
+}
+
+/* Video Titles */
+#video-title {
+  font-family: "Comic Sans MS", cursive;
+  color: #000 !important; /* Black text */
+}
+
+#video-title:hover {
+  text-decoration: underline;
+  color: #ff0; /* Bright Yellow */
+}
+
+/* Buttons */
+button, .ytp-button {
+  font-family: "Comic Sans MS", cursive;
+  background-color: #444; /* Dark Gray */
+  color: #ffffff !important; /* White text */
+  border: 2px solid #ff0; /* Bright Yellow */
+  padding: 5px 10px;
+  border-radius: 50px;
+  transition: all 0.3s ease;
+}
+
+button:hover, .ytp-button:hover {
+  background-color: #0f0; /* Bright Green background */
+  color: #000 !important; /* Black text */
+}
+
+/* Comments Section */
+ytd-comment-thread-renderer {
+  background-color: #222; /* Dark Gray */
+  border: 2px solid #ff4500; /* OrangeRed border */
+  margin-bottom: 10px;
+  padding: 10px;
+  color: #000 !important; /* Black text */
+}
+
+ytd-comment-thread-renderer:hover {
+  background-color: #444; /* Slightly lighter gray on hover */
+  border: 2px solid #0f0; /* Bright Green border */
+}
+
+/* Footer Styling */
+#footer {
+  background-color: #e0e0e0; /* Light Gray */
+  color: #000 !important; /* Black text */
+  text-align: center;
+  padding: 20px;
+  border-top: 2px solid #ff0; /* Bright Yellow border */
+}
+
+/* Links */
+a {
+  color: #000; /* Black text */
+  text-decoration: none;
+}
+
+a:hover {
+  color: #0f0; /* Bright Green */
+  text-decoration: underline;
+}
+
+/* Progress Bar (Video Player) */
+.ytp-progress-bar {
+  background: linear-gradient(to right, #000000, rgb(255, 255, 255)); /* Gradient: Black to White */
+  height: 3px;
+}
+
+.ytp-progress-bar:hover {
+  height: 8px; /* Slightly larger on hover */
+}
+
+/* Adjust Layout for Retro Look */
+#primary, #secondary {
+  background-color: #e0e0e0; /* Light Gray */
+  padding: 10px;
+}
+
+ytd-watch-next-secondary-results-renderer {
+  border-top: 2px dashed #ff4500; /* Dashed separator */
+}
