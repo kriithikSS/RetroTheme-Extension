@@ -1,0 +1,124 @@
+/* Marquee Banner */
+.marquee {
+  font-family: "Comic Sans MS", cursive;
+  background-color: #ff4500; /* OrangeRed background */
+  color: #ffff00; /* Bright Yellow text */
+  padding: 10px;
+  overflow: hidden;
+  white-space: nowrap;
+  box-shadow: 0 0 10px #000; /* Shadow for depth */
+  border: 2px solid #000; /* Black border */
+}
+
+.marquee span {
+  display: inline-block;
+  animation: marquee 10s linear infinite;
+}
+
+/* Keyframes for Scrolling Effect */
+@keyframes marquee {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+/* General Body Styling */
+body {
+  font-family: "Courier New", monospace;
+  background-color: #f0e68c; /* Khaki */
+  color: #00ff00; /* Dark Blue */
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+/* Links */
+a {
+  color: #00ff11; /* Bright Blue */
+  text-decoration: underline;
+}
+
+a:hover {
+  color: #ff4500; /* OrangeRed on hover */
+  text-decoration: none;
+}
+
+/* Headers */
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Comic Sans MS", cursive;
+  color: #800000; /* Maroon */
+  border-bottom: 2px solid #ff4500; /* OrangeRed */
+  padding-bottom: 5px;
+}
+
+/* Buttons */
+button {
+  font-family: "Comic Sans MS", cursive;
+  background: linear-gradient(to bottom, #ffffff, #c0c0c0); /* Metallic gradient */
+  border: 2px solid #808080; /* Gray border */
+  color: #000080; /* Navy Blue text */
+  padding: 8px 12px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #ffd700; /* Gold background on hover */
+  color: #000; /* Black text */
+}
+
+/* Images */
+img {
+  border: 2px solid #ff4500; /* OrangeRed border */
+  padding: 5px;
+  filter: sepia(50%);
+  max-width: 100%;
+  height: auto;
+}
+
+/* Tables */
+table {
+  border-collapse: collapse;
+  width: 100%;
+  margin: 20px 0;
+}
+
+th, td {
+  border: 2px solid #00008b; /* Dark Blue */
+  padding: 8px;
+  text-align: left;
+  background-color: #fffacd; /* Lemon Chiffon */
+}
+
+th {
+  background-color: #ffa07a; /* Light Salmon */
+  color: #000;
+}
+
+/* Lists */
+ul, ol {
+  padding-left: 20px;
+}
+
+li {
+  margin-bottom: 10px;
+}
+
+/* Footer */
+footer {
+  font-family: "Comic Sans MS", cursive;
+  text-align: center;
+  padding: 10px;
+  background-color: #222;
+  color: #fff;
+  border-top: 3px solid #ff4500; /* OrangeRed border */
+}
+
+/* Highlights */
+.highlight {
+  background-color: #ffff00; /* Bright Yellow */
+  color: #000; /* Black text */
+  padding: 3px;
+}
