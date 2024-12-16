@@ -2,32 +2,55 @@
   "manifest_version": 3,
   "name": "Retro 90s",
   "version": "3.5.5",
-  "description": "Transform websites into retro 90s themes and replicate old YouTube look and features.",
-  "permissions": [
-    "activeTab",
-    "storage",
-    "scripting"
-  ],
-  "host_permissions": [
-    "<all_urls>",
-    "*://*.youtube.com/*"
-  ],
+  "description": "Changes the Wikipedia UI to the beautiful old vector layout and transforms websites into retro 90s themes, replicating the old YouTube look and features.",
   "update_url": "https://clients2.google.com/service/update2/crx",
-  "action": {
-    "default_popup": "popup.html",
-    "default_icon": {
-      "16": "images/16.png",
-      "32": "images/32.png",
-      "48": "images/48.png",
-      "128": "images/128.png"
-    }
-  },
+  "author": "Team Comet",
+  "homepage_url": "https://github.com/kriithikSS/RetroTheme-Extension.git",
   "icons": {
     "16": "images/16.png",
     "32": "images/32.png",
-    "48": "images/48.png",
-    "128": "images/128.png"
+    "48": "icons/logo_48.png",
+    "128": "icons/logo_128.png"
   },
+  "declarative_net_request": {
+    "rule_resources": [
+      {
+        "id": "apply_vector_skin",
+        "enabled": true,
+        "path": "rules/apply.json"
+      },
+      {
+        "id": "remove_vector_skin",
+        "enabled": false,
+        "path": "rules/remove.json"
+      }
+    ]
+  },
+  "permissions": [
+    "activeTab",
+    "storage",
+    "scripting",
+    "declarativeNetRequest"
+  ],
+  "host_permissions": [
+    "<all_urls>",
+    "*://*.youtube.com/*",
+    "*://*.wikipedia.org/*",
+    "*://*.wiktionary.org/*",
+    "*://*.wikiquote.org/*",
+    "*://*.wikibooks.org/*",
+    "*://*.wikisource.org/*",
+    "*://species.wikimedia.org/*",
+    "*://*.wikinews.org/*",
+    "*://*.wikiversity.org/*",
+    "*://*.wikivoyage.org/*",
+    "*://commons.wikimedia.org/*",
+    "*://*.wikidata.org/*",
+    "*://*.mediawiki.org/*",
+    "*://meta.wikimedia.org/*",
+    "*://incubator.wikimedia.org/*",
+    "*://wikitech.wikimedia.org/*"
+  ],
   "background": {
     "service_worker": "background.js"
   },
@@ -43,7 +66,7 @@
       "js": [
         "helpers/logger.js",
         "helpers/enums.js",
-        "helpers/states.js", 
+        "helpers/states.js",
         "initial-setup.js"
       ],
       "run_at": "document_start"
@@ -60,5 +83,14 @@
       "resources": ["youtube.css", "default.css", "images/*", "helpers/*"],
       "matches": ["*://*.youtube.com/*", "<all_urls>"]
     }
-  ]
+  ],
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "images/16.png",
+      "32": "images/32.png",
+      "48": "icons/logo_48.png",
+      "128": "icons/logo_128.png"
+    }
+  }
 }
